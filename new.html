@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="new.css"> 
+  </head>
+ <body class="myform">
+  <form class="all" method='post'>
+    <section>
+      <div class="container bg_color">
+        <h4>Background colour</h4>
+          <div class="row">
+            <div class="col-md-3 ">
+                <div class="round1">
+                  <input type="checkbox" id="checkbox1"  class="bgcolor" name="bgcolor" value="black" />
+                  <label for="checkbox1"></label> 
+                  <br>
+                  <span>Black</span>
+                </div>
+            </div>
+
+             <div class="col-md-3 ">
+                <div class="round2">
+                  <input type="checkbox" id="checkbox2" class="bgcolor" name="bgcolor" value="grey" />
+                  <label for="checkbox2"></label> 
+                  <br>
+                  <span>grey</span>
+                </div>
+            </div>
+
+            <div class="col-md-3 ">
+                <div class="round3">
+                  <input type="checkbox" id="checkbox3" class="bgcolor"  name="bgcolor" value="darkgrey" />
+                  <label for="checkbox3"></label> 
+                  <br>
+                  <span>dark grey</span>
+                </div>
+            </div>
+
+               <div class="col-md-3 ">
+                <div class="round4">
+                  <input type="checkbox" id="checkbox4" class="bgcolor" name="bgcolor" value="white" />
+                  <label for="checkbox4"></label> 
+                  <br>
+                  <span>White</span>
+                </div>
+            </div>
+    </section>
+  <br>
+
+   <section>
+    <div class="container txt_color">
+      <h4>Text colour</h4>
+        <div class="row">
+          <div class="col-md-3 ">
+              <div class="roundf1">
+                <input type="checkbox" id="font1" name="bgtext" value="black" />
+                <label for="font1"></label> 
+                <br>
+                <span>Black</span>
+              </div>
+          </div>
+
+           <div class="col-md-3 ">
+              <div class="roundf2">
+                <input type="checkbox" id="font2" name="bgtext" value="grey" />
+                <label for="font2"></label> 
+                <br>
+                <span>grey</span>
+              </div>
+          </div>
+
+          <div class="col-md-3 ">
+              <div class="roundf3">
+                <input type="checkbox" id="font3" name="bgtext" value="darkgrey" />
+                <label for="font3"></label> 
+                <br>
+                <span>dark grey</span>
+              </div>
+          </div>
+
+             <div class="col-md-3 ">
+              <div class="roundf4">
+                <input type="checkbox" id="font4" name="bgtext" value="white" />
+                <label for="font4"></label> 
+                <br>
+                <span>White</span>
+              </div>
+          </div>
+  </section>
+  <br>
+   <section>
+    <div class="container fnt_style">
+      <h4>Font style</h4>
+        <div class="row">
+
+          <div class="col-md-3 ">
+              <div class="style1">
+                <input type="checkbox" id="styl1" name="fontstyle" value="italic"/>
+                  <div class="size">
+                  <label for="styl1"><img src="font_images/fonts1.png"  width="50" height="50"/></label>
+                  <br>
+                  <span>font 1</span>
+                </div>
+              </div>
+          </div>
+
+          <div class="col-md-3 ">
+              <div class="style2">
+                <input type="checkbox" id="styl2" name="fontstyle" value="Times New Roman" />
+                  <div class="size">
+                  <label for="styl2"><img src="font_images/pacifioco.png"  width="50" height="50"/></label>
+                  <br>
+                  <span>font 2</span>
+                </div>
+              </div>
+          </div>
+
+           <div class="col-md-3 ">
+              <div class="style3">
+                <input type="checkbox" id="styl3" name="fontstyle" value="Palatino" />
+                  <div class="size">
+                  <label for="styl3"><img src="font_images/catsmn.png"  width="50" height="50" font-family="Times New Roman"/></label>
+                  <br>
+                  <span>font 3</span>
+                </div>
+              </div>
+          </div>
+
+              <div class="col-md-3 ">
+              <div class="style4">
+                <input type="checkbox" id="styl4" name="fontstyle" value="arial" />
+                  <div class="size">
+                  <label for="styl4"><img src="font_images/vi2222.png"  width="50" height="50"/></label>
+                  <br>
+                  <span>font 4</span>
+                </div>
+              </div>
+          </div>
+    </section>
+ <!--  <p id="fontchanged"></p> -->
+  <!-- </form> -->
+    <br>
+    <div class="text">
+      <h6>Type :address going on sign</h6>
+      <input type="text" name="typehere" placeholder="typehere" id="texthwere">
+    </div>
+    <div id="result">
+      <div id="displayArea1" class="displayArea">
+       <textarea rows="4" cols="50" id="txtareacolor" ></textarea>
+        <p id="fontchanged"></p>
+      </div>
+      <input id="btn-preview-image" type="submit" value="Preview" />
+      <input type="button" id="download" value="Download" />
+      <br />
+    </div>
+  </form>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.5.0-beta4/html2canvas.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="js/new.js"></script>
+  </body>
+</html>
+
